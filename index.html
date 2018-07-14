@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>imdl Imgur Album Downloader</title>
+        <meta name="description" content="imdl Imgur Album Downloading Tool - download entire imgur albums from your web browser">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/Apple Home Screen Icon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" href="https://jackw01.github.io/css/style.css">
+        <link rel="stylesheet" href="css/extra.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86167050-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-86167050-5');
+        </script>
+    </head>
+    <body class="body-dark">
+        <main>
+            <div class="main wrapper clearfix">
+                <h1 class="mainpage-header">imdl</h1>
+                <h3>Imgur Album Downloader</h3>
+                <span class="smalltext">© 2018 <a href="http://github.com/jackw01">jackw01</a>. Released under the MIT license. Built with <a href="https://github.com/Stuk/jszip">JSZip</a> and <a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a>.</span>
+                <br><br>
+                <div class="flex">
+                    <input type="text" id="input-url" placeholder="Imgur album URL"/>
+                    <a class="button button-rect" id="button-download">Download</a>
+                </div>
+                <div class="progress-bar-track" style="display:none"><div class="progress-bar" style="width:0"></div></div>
+                <span id="error">Album not found.</span>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/jszip.min.js"></script>
+        <script src="js/FileSaver.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
